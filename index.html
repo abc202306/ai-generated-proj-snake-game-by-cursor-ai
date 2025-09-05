@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>🐍 Snake Game</h1>
+            <div class="score-board">
+                <div class="score">
+                    <span>Score: </span>
+                    <span id="current-score">0</span>
+                </div>
+                <div class="high-score">
+                    <span>High Score: </span>
+                    <span id="high-score">0</span>
+                </div>
+            </div>
+        </header>
+        
+        <div class="game-area">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+            <div class="game-overlay" id="gameOverlay">
+                <div class="overlay-content">
+                    <h2 id="overlayTitle">Press SPACE to Start</h2>
+                    <p id="overlayMessage">Use arrow keys to control the snake</p>
+                    <button id="startButton" class="game-button">Start Game</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <div class="control-info">
+                <h3>Controls:</h3>
+                <div class="control-grid">
+                    <div class="control-item">
+                        <span class="key">↑</span>
+                        <span>Up</span>
+                    </div>
+                    <div class="control-item">
+                        <span class="key">↓</span>
+                        <span>Down</span>
+                    </div>
+                    <div class="control-item">
+                        <span class="key">←</span>
+                        <span>Left</span>
+                    </div>
+                    <div class="control-item">
+                        <span class="key">→</span>
+                        <span>Right</span>
+                    </div>
+                    <div class="control-item">
+                        <span class="key">SPACE</span>
+                        <span>Pause</span>
+                    </div>
+                    <div class="control-item">
+                        <span class="key">R</span>
+                        <span>Restart</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
