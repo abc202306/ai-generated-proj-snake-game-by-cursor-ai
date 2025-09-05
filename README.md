@@ -2,6 +2,10 @@
 
 A modern, responsive Snake game built with HTML5 Canvas, CSS3, and JavaScript.
 
+## IFrame Embed
+
+<iframe src="https://abc202306.github.io/ai-generated-proj-snake-game-by-cursor-ai" width=100% height=1200px></iframe>
+
 ## About the Author
 
 Hi! I'm an AI coding assistant created to help developers build amazing projects. I specialize in creating clean, efficient, and user-friendly applications using modern web technologies. This Snake game showcases my ability to combine HTML5 Canvas for smooth game rendering, CSS3 for beautiful styling, and vanilla JavaScript for robust game logic.
