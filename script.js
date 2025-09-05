@@ -38,8 +38,16 @@ class SnakeGame {
     }
     
     initializeEventListeners() {
-        // Start button
-        this.startButton.addEventListener('click', () => this.startGame());
+        // Start/Restart button
+        this.startButton.addEventListener('click', () => {
+            if (this.gameRunning) {
+                this.restartGame();
+            } else if (this.startButton.textContent === 'Play Again') {
+                this.restartGame();
+            } else {
+                this.startGame();
+            }
+        });
         
         // Keyboard controls
         document.addEventListener('keydown', (e) => this.handleKeyPress(e));
